@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    
+    <link rel="stylesheet" href="estilos.css">
+
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+
+
+<body>
+
+    
+<div class="titulo">Encriptador Y <br> Desencriptador De Texto</div>
+
+
+    <label>Ingresa un texto a encriptar:</label>
+    <label class="min">*Sólo minúsculas</label>
+
+    <input type="text" id="textoencriptado">
+
+    <label>Texto desencriptado</label>
+    <textarea name="resultado" id="textodesencriptado" rows="1" cols="1"></textarea><br>
+
+
+    <div class="botones">
+    <button class= "b1" type="button" id="botonencriptar">Encripta tu texto</button>
+    <button class= "b2" type="button" id="botondesencriptar">Desencripta tu texto</button>
+    </div> 
+    <button class= "b3" type="button" id="botoncopiar">Copiar</button>
+
+
+</body>
+
+
+<script>
+    var btne = document.querySelector("#botonencriptar");
+    btne.onclick = encriptar;
+
+    var btnd = document.querySelector("#botondesencriptar");
+    btnd.onclick = desencriptar;
+
+    var btnc = document.querySelector("#botoncopiar");
+    btnc.onclick = copiar;
+</script>
+
+
+<footer class="pie">Created in 2024 by Erick Castillo</footer>
+
+</html>

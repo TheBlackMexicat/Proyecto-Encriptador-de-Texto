@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+body, div, label, textarea, button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: url("https://img.freepik.com/vector-premium/candado-cerrado-fondo-digital-seguridad-cibernetica_42077-14524.jpg?w=826");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #a1e1ff;
+
+    color: purple;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    min-height: 100vh;
+}
+
+input{
+    margin: 20px;
+    padding: 15px;
+    width: 25%;
+    height: 80px;
+    border-radius: 7px;
+}
+.pie{
+    background-color: aquamarine;
+    font-size: 22px;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+.titulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;      
+    margin-bottom: 20px;
+    color:rgb(226, 183, 238);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgb(49, 49, 172);
+    border: rgb(92, 18, 211);
+    border-style: solid; 
+    border-radius: 5px;
+}
+
+
+label {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 0px;
+    color: white;
+}
+
+
+textarea {
+    width: 30%;
+    height: 60%;
+    margin-bottom: 2px;
+    padding: 35px;
+    padding-top: 2;
+    border: 1px solid #bdc3c7;
+    border-radius: 20px;
+    font-size: 16px;
+    resize: vertical;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+#botoncopiar{
+    display: none;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 8px 15px;
+    margin-top: 1px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.b3{
+    justify-content: space-around;
+    display: flex;
+}
+
+
+button:hover {
+    background-color: forestgreen;
+    transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: auto;
+        margin: 5px 0;
+    }
+
+    textarea {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 14px 20px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        padding: auto;
+        align-items: center;
+    }
+
+    input {
+        width: auto;
+        height: auto;
+    }
+
+    .titulo {
+        font-size: 20px;
+        padding: auto;
+    }
+
+    textarea {
+        width: auto;
+        height: auto;
+        padding: auto;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
